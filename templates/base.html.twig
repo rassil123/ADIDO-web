@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+
+    {% block stylesheet %}
+        <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/css/animate.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/css/all.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/css/datepiker.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/css/swiper.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/css/lightcase.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+    {% endblock %}
+</head>
+<body>
+    {% block body %}{% endblock %}
+
+    {% block javascripts %}
+        <script src="{{ asset('assets/js/vendor/jquery-3.6.0.min.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/datepiker.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/modernizr-3.11.2.min.js') }}"></script>
+        <script src="{{ asset('assets/js/isotope.pkgd.min.js') }}"></script>
+        <script src="{{ asset('assets/js/swiper.min.js') }}"></script>
+        <script src="{{ asset('assets/js/wow.js') }}"></script>
+        <script src="{{ asset('assets/js/lightcase.js') }}"></script>
+        <script src="{{ asset('assets/js/jquery.countdown.min.js') }}"></script>
+        <script src="{{ asset('assets/js/waypoints.min.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('assets/js/plugins.js') }}"></script>
+        <script src="{{ asset('assets/js/main.js') }}"></script>
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
+</body>
+</html>

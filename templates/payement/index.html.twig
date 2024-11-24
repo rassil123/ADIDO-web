@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Payement index{% endblock %}
+
+{% block body %}
+    <h1>Payement index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>IDPayement</th>
+                <th>TypePayement</th>
+                <th>Montant</th>
+                <th>DateRegelement</th>
+                <th>Reference</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for payement in payements %}
+            <tr>
+                <td>{{ payement.IDPayement }}</td>
+                <td>{{ payement.TypePayement }}</td>
+                <td>{{ payement.Montant }}</td>
+                <td>{{ payement.DateRegelement ? payement.DateRegelement|date('Y-m-d') : '' }}</td>
+                <td>{{ payement.Reference }}</td>
+                <td>
+                    <a href="{{ path('app_payement_show', {'IDPayement': payement.IDPayement}) }}">show</a>
+                    <a href="{{ path('app_payement_edit', {'IDPayement': payement.IDPayement}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_payement_new') }}">Create new</a>
+{% endblock %}

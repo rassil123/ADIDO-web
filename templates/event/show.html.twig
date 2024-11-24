@@ -1,0 +1,629 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Event{% endblock %}
+
+{% block body %}
+   <!doctype html>
+<html class="no-js" lang="en">
+
+
+<!-- Mirrored from aminurislam.com/gullatheme/explore/tour-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Feb 2024 08:58:46 GMT -->
+<head>
+	<meta charset="utf-8">
+	<title>Travel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- site favicon -->
+	<link rel="icon" type="image/png" href="assets/images/favicon.png">
+	<!-- Place favicon.ico in the root directory -->
+
+	<!-- All stylesheet and icons css  -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/datepiker.css">
+	<link rel="stylesheet" href="assets/css/swiper.min.css">
+	<link rel="stylesheet" href="assets/css/lightcase.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+	<!-- preloader start here -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+	<!-- preloader ending here -->
+
+
+	<!-- scrollToTop start here -->
+    <a href="#" class="scrollToTop"><i class="fa-solid fa-angle-up"></i></a>
+    <!-- scrollToTop ending here -->
+
+
+    
+
+    <!-- ================> Banner section start here <================== -->
+	<div class="pageheader bg__img" style="background-image: url(assets/images/bg-img/04.jpg);">
+        <div class="container">
+            <div class="pageheader__content text-center">
+                <h2>Tour Detail’s</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Tour Detail’s</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- ================> Banner section end here <================== -->
+
+
+    <!-- ================> Tour section start here <================== -->
+	<div class="tour padding--top">
+        <div class="tour__slider overflow-hidden">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="tour__item">
+                        <div class="tour__thumb">
+                            <img src="assets/images/tour/01.jpg" alt="Travel Thumb">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="tour__item">
+                        <div class="tour__thumb">
+                            <img src="assets/images/tour/02.jpg" alt="Travel Thumb">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="tour__item">
+                        <div class="tour__thumb">
+                            <img src="assets/images/tour/03.jpg" alt="Travel Thumb">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="tour__item">
+                        <div class="tour__thumb">
+                            <img src="assets/images/tour/04.jpg" alt="Travel Thumb">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="container">
+            <div class="tour__info mb-5">
+                <div class="tour__info--title">
+                    <h2>{{ event.NameEvent }}</h2>
+                </div>
+                <div class="row g-4 row-cols-xl-5 row-cols-sm-3 row-cols-1">
+                    <div class="col">
+                        <div class="tour__info--list">
+                            <div class="left">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="right">
+                                <p><span>place</span>{{ event.LocationEvent }}/p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="tour__info--list">
+                            <div class="left">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div class="right">
+                                <p><span>date</span> {{ event.DateStartEvent ? event.DateStartEvent|date('Y-m-d') : '' }}</p>
+                                 <p><span></span> {{ event.DateEndEvent ? event.DateEndEvent|date('Y-m-d') : '' }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="tour__info--list">
+                            <div class="left">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div class="right">
+                                <p><span>join</span> 8 person</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="tour__info--list">
+                            <div class="left">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="right">
+                                <p><span>Review</span> 4.8 (2.5k Review)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="tour__info--list">
+                            <a class="default__btn"><span>$250.00</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="section__wrapper">
+                <div class="row g-4">
+                    <div class="col-lg-9">
+                        <div class="row g-4 row-cols-1">
+                            <div class="col">
+                                <div class="tour__item">
+                                    <div class="tour__inner">
+                                        <div class="tour__content">
+                                            <h3>Overview</h3>
+                                            <p>Aliquam euismod at potenti velit risus erat nulla blandit leo. Sagittis cubil of the rhoncus sociosqu Taciti gravida augue Vestibulum Eu augue augue duis rhoncus sociosqu cubil of the rhoncus sociosqu Taciti gravidaduis rhoncuQuam nec erat a volutpat eleifend nibh Bibendum malesuada ridiculus Dapibus vel duis rhoncus socio Sollicitudin cubil of the rhoncus sociosqu Taciti gravidictudonec vivamus potenti cursus</p>
+                                            <p>Aliquam euismod at potenti velit risus erat nulla blandit leo. Sagittis cubil of the rhoncus sociosqu Taciti gravida augue Vestibulum Eu augue augue duis rhoncus sociosqu cubil of the rhoncus sociosqu Taciti gravidaduis rhoncuQuam nec erat a volutpat eleifend nibh Bibendum malesuada ridiculus Dapibus vel duis rhoncus socio Sollicitudin cubil of the rhoncus sociosqu Taciti gravidictudonec vivamus potenti cursus</p>
+                                            <div class="tour__content--info">
+                                                <div class="row g-4">
+                                                    <div class="col-md-6">
+                                                        <div class="tour__content--title">
+                                                            <h3>Included</h3>
+                                                        </div>
+                                                        <div class="tour__content--details">
+                                                            <ul>
+                                                                <li><i class="fa-solid fa-circle-check"></i>Pick and Drop Services</li>
+                                                                <li><i class="fa-solid fa-circle-check"></i>1 Meal Per Day</li>
+                                                                <li><i class="fa-solid fa-circle-check"></i>Cruise Dinner & Music Event</li>
+                                                                <li><i class="fa-solid fa-circle-check"></i>Visit 7 Best Places in the City</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="tour__content--title">
+                                                            <h3>Exclude</h3>
+                                                        </div>
+                                                        <div class="tour__content--details">
+                                                            <ul>
+                                                                <li><i class="fa-solid fa-circle-xmark"></i>Additional Services</li>
+                                                                <li><i class="fa-solid fa-circle-xmark"></i>Insurance</li>
+                                                                <li><i class="fa-solid fa-circle-xmark"></i>Food & Drinks</li>
+                                                                <li><i class="fa-solid fa-circle-xmark"></i>Tickets</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tour__content--accordion">
+                                                <div class="tour__content--title">
+                                                    <h3>Day Tour Plan</h3>
+                                                </div>
+                                                <div class="tour__content--details">
+                                                    <div class="accordion" id="accordionExample">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingOne">
+                                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Day 1</button>
+                                                            </h2>
+                                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    <p>Aliquam euismod at potenti velit risus erat nulla blandit leo. Sagittis cubil of the rhoncus sociosqu Taciti Vestibulum Eu augue augue duis rhoncus sociosqu cubil of the rhoncus sociosqu Taciti gravidaduis rhoncuQuam nec erat  gravidictudonec vivamus potenti cursus cras cubil </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingTwo">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Day 2</button>
+                                                            </h2>
+                                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    <p>Aliquam euismod at potenti velit risus erat nulla blandit leo. Sagittis cubil of the rhoncus sociosqu Taciti Vestibulum Eu augue augue duis rhoncus sociosqu cubil of the rhoncus sociosqu Taciti gravidaduis rhoncuQuam nec erat  gravidictudonec vivamus potenti cursus cras cubil </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingThree">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Day 3</button>
+                                                            </h2>
+                                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    <p>Aliquam euismod at potenti velit risus erat nulla blandit leo. Sagittis cubil of the rhoncus sociosqu Taciti Vestibulum Eu augue augue duis rhoncus sociosqu cubil of the rhoncus sociosqu Taciti gravidaduis rhoncuQuam nec erat  gravidictudonec vivamus potenti cursus cras cubil </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingFour">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Day 4</button>
+                                                            </h2>
+                                                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    <p>Aliquam euismod at potenti velit risus erat nulla blandit leo. Sagittis cubil of the rhoncus sociosqu Taciti Vestibulum Eu augue augue duis rhoncus sociosqu cubil of the rhoncus sociosqu Taciti gravidaduis rhoncuQuam nec erat  gravidictudonec vivamus potenti cursus cras cubil </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tour__location">
+                                            <div class="tour__location--title">
+                                                <h3>Location</h3>
+                                            </div>
+                                            <div class="tour__location--details">
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13004082.928417291!2d-104.65713107818928!3d37.275578278180674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1648892863588!5m2!1sen!2sbd" allowfullscreen="" loading="lazy"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="sidebar">
+                            <div class="sidebar__search mb-4 bg-white">
+                                <form action="#">
+                                    <input type="text" placeholder="Search here ................">
+                                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </form>
+                            </div>
+
+                            <div class="sidebar__catagory mb-4 bg-white">
+                                <div class="sidebar__catagory--area">
+                                    <div class="sidebar__catagory--title">
+                                        <h4>Post Calegory</h4>
+                                    </div>
+                                    <div class="sidebar__catagory--body">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Action</a>
+                                                <span>(20)</span>
+                                            </li>
+                                            <li>
+                                                <a href="#">Adventure</a>
+                                                <span>(15)</span>
+                                            </li>
+                                            <li>
+                                                <a href="#">Fighting</a>
+                                                <span>(16)</span>
+                                            </li>
+                                            <li>
+                                                <a href="#">Flight Simulation</a>
+                                                <span>(12)</span>
+                                            </li>
+                                            <li>
+                                                <a href="#">platfrom</a>
+                                                <span>(22)</span>
+                                            </li>
+                                            <li>
+                                                <a href="#">Racing</a>
+                                                <span>(30)</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sidebar__post mb-4 bg-white">
+                                <div class="sidebar__post--area">
+                                    <div class="sidebar__post--title">
+                                        <h4>popular Post</h4>
+                                    </div>
+                                    <div class="sidebar__post--body">
+                                        <ul>
+                                            <li>
+                                                <div class="thumb">
+                                                    <a href="blog-single.html"><img src="assets/images/sidebar/post/01.jpg" alt="travel thumb"></a>
+                                                </div>
+                                                <div class="content">
+                                                    <a href="blog-single.html"><h6>Travellers History France</h6></a>
+                                                    <p>November 15,2022</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="thumb">
+                                                    <a href="blog-single.html"><img src="assets/images/sidebar/post/02.jpg" alt="travel thumb"></a>
+                                                </div>
+                                                <div class="content">
+                                                    <a href="blog-single.html"><h6>Diving Atlantic Malvides</h6></a>
+                                                    <p>November 15,2022</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="thumb">
+                                                    <a href="blog-single.html"><img src="assets/images/sidebar/post/03.jpg" alt="travel thumb"></a>
+                                                </div>
+                                                <div class="content">
+                                                    <a href="blog-single.html"><h6>Travellers History France</h6></a>
+                                                    <p>November 15,2022</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="thumb">
+                                                    <a href="blog-single.html"><img src="assets/images/sidebar/post/04.jpg" alt="travel thumb"></a>
+                                                </div>
+                                                <div class="content">
+                                                    <a href="blog-single.html"><h6>Diving Atlantic Malvides</h6></a>
+                                                    <p>November 15,2022</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sidebar__tag bg-white mb-4">
+                                <div class="sidebar__tag--area">
+                                    <div class="sidebar__tag--title">
+                                        <h4>Popular Tag</h4>
+                                    </div>
+                                    <div class="sidebar__tag--body">
+                                        <ul>
+                                            <li><a href="#">Travel</a></li>
+                                            <li><a href="#">Tour</a></li>
+                                            <li><a href="#">Maldivs</a></li>
+                                            <li><a href="#">Thailand</a></li>
+                                            <li><a href="#">Traveling</a></li>
+                                            <li><a href="#">Hong Kong</a></li>
+                                            <li><a href="#">Francisco</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sidebar__offer">
+                                <div class="sidebar__offer--thumb">
+                                    <a href="#"><img src="assets/images/offer/01.jpg" alt="travel thumb"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+    <!-- ================> Tour section end here <================== -->
+
+
+    <!-- ================> Hotel section start here <================== -->
+	<div class="packege hotel padding--top padding--bottom">
+		<div class="container">
+            <div class="section__header">
+                <h3>Related Packegs</h3>
+            </div>
+			<div class="section__wrapper">
+				<div class="row g-4 row-cols-xl-3 row-cols-sm-2 row-cols-1">
+					<div class="col">
+						<div class="packege__item">
+							<div class="packege__inner">
+								<div class="packege__thumb">
+									<a href="tour-single.html"><img src="assets/images/packege/14.jpg" alt="Travel Thumb"></a>
+								</div>
+								<div class="packege__content">
+									<a href="tour-single.html"><h4>Enjoy Beauty place in Bali City</h4></a>
+                                    <div class="packege__meta">
+                                        <span class="packege__meta--day"><i class="fa-regular fa-clock"></i> 10 Days</span>
+                                        <span class="packege__meta--persion"><i class="fa-regular fa-user"></i> 8 Person</span>
+                                        <span class="packege__meta--rating"><i class="fa-solid fa-star"></i> 4.8 (2.5k Review)</span>
+
+                                    </div>
+									<div class="packege__rivew">
+										<div class="left">
+                                            <p><i class="fa-solid fa-location-dot"></i> Bali, indonesha</p>
+										</div>
+										<div class="right">
+											<span class="packege__price">$1200</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="packege__item">
+							<div class="packege__inner">
+								<div class="packege__thumb">
+									<a href="tour-single.html"><img src="assets/images/packege/15.jpg" alt="Travel Thumb"></a>
+								</div>
+								<div class="packege__content">
+									<a href="tour-single.html"><h4>Enjoy Beauty place in Rom City</h4></a>
+                                    <div class="packege__meta">
+                                        <span class="packege__meta--day"><i class="fa-regular fa-clock"></i> 10 Days</span>
+                                        <span class="packege__meta--persion"><i class="fa-regular fa-user"></i> 8 Person</span>
+                                        <span class="packege__meta--rating"><i class="fa-solid fa-star"></i> 4.8 (2.5k Review)</span>
+
+                                    </div>
+									<div class="packege__rivew">
+										<div class="left">
+                                            <p><i class="fa-solid fa-location-dot"></i> Bali, indonesha</p>
+										</div>
+										<div class="right">
+											<span class="packege__price">$1200</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="packege__item">
+							<div class="packege__inner">
+								<div class="packege__thumb">
+									<a href="tour-single.html"><img src="assets/images/packege/16.jpg" alt="Travel Thumb"></a>
+								</div>
+								<div class="packege__content">
+									<a href="tour-single.html"><h4>Enjoy Beauty place japan City</h4></a>
+                                    <div class="packege__meta">
+                                        <span class="packege__meta--day"><i class="fa-regular fa-clock"></i> 10 Days</span>
+                                        <span class="packege__meta--persion"><i class="fa-regular fa-user"></i> 8 Person</span>
+                                        <span class="packege__meta--rating"><i class="fa-solid fa-star"></i> 4.8 (2.5k Review)</span>
+
+                                    </div>
+									<div class="packege__rivew">
+										<div class="left">
+                                            <p><i class="fa-solid fa-location-dot"></i> Bali, indonesha</p>
+										</div>
+										<div class="right">
+											<span class="packege__price">$1200</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- ================> Hotel section end here <================== -->
+
+
+    <!-- ================> News Letter section start here <================== -->
+	<div class="newsletter padding--top padding--bottom bg__img" style="background: url(assets/images/bg-img/02.jpg)">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8">
+					<div class="section__header text-center">
+						<h2>Sign Up For Our Newsletter</h2>
+					</div>
+					<div class="newsletter__form">
+						<form action="#">
+							<input type="text" placeholder="Enter your e-mail here">
+							<button type="submit" class="default__btn">Subscribe Now</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- ================> News Letter section end here <================== -->
+
+
+    <!-- ================> Footer section start here <================== -->
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="container">
+				<div class="row g-4 row-cols-xl-4 row-cols-sm-2 row-cols-1">
+					<div class="col">
+						<div class="footer__top--about">
+							  <img src="assets/images/logo/logo22.png" alt="travel logo">
+							<p>Continually productize compelling dome packed with all Elated utilize website and creating  supply next-generation</p>
+							<h5>Follow Us On:</h5>
+							<ul>
+								<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+								<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+								<li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col">
+						<div class="footer__top--tour">
+							<h5>Tour Type</h5>
+							<ul>
+								<li><a href="#">Adventure Tours</a></li>
+								<li><a href="#">Grouo Tour</a></li>
+								<li><a href="#">Seasonal Tours</a></li>
+								<li><a href="#">Relaxation Toure</a></li>
+								<li><a href="#">Family Friendly Tour</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col">
+						<div class="footer__top--contact">
+							<h5>Contact info</h5>
+							<ul>
+								<li>
+									<i class="fa-solid fa-phone"></i>
+									<span>88130-589-745-6987 +1655-456-523</span>
+								</li>
+								<li>
+									<i class="fa-solid fa-clock"></i>
+									<span>Mon-Fri 09:00-18:00 (except public holidays</span>
+								</li>
+								<li>
+									<i class="fa-solid fa-location-dot"></i>
+									<span>25/2 Vokte Street Building Melborn City</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col">
+						<div class="footer__top--gallery">
+							<h5>Gallery</h5>
+							<ul>
+								<li>
+									<a href="assets/images/gallery/footer/01.jpg" data-rel="lightcase:callection"><img src="assets/images/gallery/footer/01.jpg" alt="travel thumb"></a>
+								</li>
+								<li>
+									<a href="assets/images/gallery/footer/02.jpg" data-rel="lightcase:callection"><img src="assets/images/gallery/footer/02.jpg" alt="travel thumb"></a>
+								</li>
+								<li>
+									<a href="assets/images/gallery/footer/03.jpg" data-rel="lightcase:callection"><img src="assets/images/gallery/footer/03.jpg" alt="travel thumb"></a>
+								</li>
+								<li>
+									<a href="assets/images/gallery/footer/04.jpg" data-rel="lightcase:callection"><img src="assets/images/gallery/footer/04.jpg" alt="travel thumb"></a>
+								</li>
+								<li>
+									<a href="assets/images/gallery/footer/05.jpg" data-rel="lightcase:callection"><img src="assets/images/gallery/footer/05.jpg" alt="travel thumb"></a>
+								</li>
+								<li>
+									<a href="assets/images/gallery/footer/06.jpg" data-rel="lightcase:callection"><img src="assets/images/gallery/footer/06.jpg" alt="travel thumb"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<div class="footer__area text-center">
+					<p>&copy; Copyright 2022. All Rights Reserved by <a href="https://www.templatemonster.com/authors/labartisan">LabArtisan</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+    <!-- ================> Footer section end here <================== -->
+
+	
+	
+	<!-- All Needed JS -->
+	<script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/vendor/datepiker.js"></script>
+	<script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+	<script src="assets/js/isotope.pkgd.min.js"></script>
+	<script src="assets/js/swiper.min.js"></script>
+	<script src="assets/js/wow.js"></script>
+	<script src="assets/js/lightcase.js"></script>
+	<script src="assets/js/jquery.countdown.min.js"></script>
+	<script src="assets/js/counterup.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/main.js"></script>
+
+
+	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+	<script>
+		window.ga = function () {
+			ga.q.push(arguments)
+		};
+		ga.q = [];
+		ga.l = +new Date;
+		ga('create', 'UA-XXXXX-Y', 'auto');
+		ga('set', 'anonymizeIp', true);
+		ga('set', 'transport', 'beacon');
+		ga('send', 'pageview')
+	</script>
+	<script src="../../../www.google-analytics.com/analytics.js" async></script>
+</body>
+
+<!-- Mirrored from aminurislam.com/gullatheme/explore/tour-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Feb 2024 08:59:07 GMT -->
+</html>
+
+    <a href="{{ path('app_event_index') }}">back to list</a>
+
+    <a href="{{ path('app_event_edit', {'IDEvent': event.IDEvent}) }}">edit</a>
+
+    {{ include('event/_delete_form.html.twig') }}
+{% endblock %}
